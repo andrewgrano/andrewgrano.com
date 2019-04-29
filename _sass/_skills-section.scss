@@ -45,16 +45,17 @@
     padding-top: 17vmax;
     position: absolute;
     top: 0;
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
 
     &--development {
-      text-orientation: sideways-right;
-      writing-mode: sideways-lr;
       left: -8vmax;
+      transform: rotateZ(180deg);
+      top: 4vmax;
     }
 
     &--design {
-      text-orientation: sideways-right;
-      writing-mode: vertical-lr;
+
       right: -8vmax;
     }
   }
