@@ -71,8 +71,8 @@ function nextDetailModal (activeDetailItemNode) {
     var parentIndex = parseInt(parent.getAttribute("data-details-item"))
 
     parent.classList.remove("show");
-    console.log(parentIndex)
-    console.log(parentIndex + 1)
+    // console.log(parentIndex)
+    // console.log(parentIndex + 1)
 
 
     if( parentIndex === 5 ) {
