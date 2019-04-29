@@ -22,8 +22,7 @@ function setAspectRatio() {
   var aspectRatio = myWidth / myHeight
   // console.log("width " + myWidth);
   // console.log("height " + myHeight);
-
-  console.log("aspect ratio is " + aspectRatio);
+  // console.log("aspect ratio is " + aspectRatio);
 
   if( aspectRatio >= 2 ) {
     //Very Wide Screen
