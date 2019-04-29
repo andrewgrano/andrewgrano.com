@@ -132,7 +132,7 @@ window.addEventListener('click', function (event) {
         document.querySelector(".timelineDetails.show").classList.remove("show");
    }
 
-}, false);
+}, true);
 
 
 document.addEventListener('keydown', function(e) {
