@@ -106,6 +106,10 @@ function closeDetailModal(activeDetailItemNode) {
 
 window.addEventListener('click', function (event) {
     if (event.target.matches('.timelineItem__expand')) {
+
+        var experience = document.querySelector(".experience");
+        experience.classList.add("bg-red");
+
         var itemIndex = event.target.parentNode.getAttribute("data-timeline-item")
         var detailsElem = "[data-details-item='" + itemIndex + "']";
         var detailsElem = document.querySelector(detailsElem);
