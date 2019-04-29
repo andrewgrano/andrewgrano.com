@@ -1,0 +1,334 @@
+.experience {
+  max-width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  background: #FBFFF8;
+
+  &__heading,
+  &__footer {
+    background: $green-light;
+    color: $white;
+    font-size: 5.5vmax;
+    padding-left: 4vmax;
+    font-family: $displayFont;
+    border-right: 3vmax solid #5A694D;
+    position: relative;
+    margin-right: 6vmax;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+
+    &:after,
+    &:before {
+        content: " ";
+        position: absolute;
+        right: -6vmax;
+        top: 0;
+        width: 3vmax;
+        width: calc(3vmax + 2px);
+        height: 100%;
+        background: #485D36;
+    }
+
+    &:before {
+        right: -9vmax;
+        background: #374D24;
+    }
+  }
+}
+
+.timeline {
+  position: relative;
+  padding: 10vmax .5vmax 10vmax 0;
+  margin-left: 30%;
+  list-style: none;
+
+  @media (max-width: 767px) {
+    margin-left: 7%;
+  }
+
+  &:before {
+    content: " ";
+    width: 1vmax;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $green-light;
+  }
+
+  &Details {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background:rgba(0,0,0,0.9);
+    display: none;
+
+    &__next,
+    &__prev{
+      position: fixed;
+      left: 0;
+      width: 10%;
+      text-align: center;
+      height: 5vmax;
+      top: 20vmax;
+      cursor: pointer;
+      color: $white;
+      background: url(../img/icon-left.svg) no-repeat center center transparent;
+
+      img {
+        display: none;
+      }
+    }
+
+    &__next {
+        background-image: url(../img/icon-right.svg);
+    }
+
+    &__next {
+      left: initial;
+      right: 0;
+    }
+
+    &__close {
+      position: absolute;
+      height: 3vmax;
+      width: 3vmax;
+      text-align: center;
+      border-radius: 100%;
+      right: -1.5vmax;
+      top: -1.5vmax;
+      cursor: pointer;
+      background: url(../img/icon-close.svg) no-repeat center center $green-light;
+      background-size: 55%;
+
+      img {
+        width: 1.5vmax;
+        position: relative;
+        top: 0.4vmax;
+      }
+    }
+
+    &__inner {
+      background: white;
+      border: 1vmax solid $green-light;
+      width: 80%;
+      margin: 10vmax auto 0 auto;
+      padding: 10vmax;
+      position: relative;
+      font-size: 2.2rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        color: $gray-dark;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    &__duties {
+        ul {
+            list-style: disc;
+            margin-left: 2rem;
+
+            li {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+  }
+
+  &Item {
+    position: relative;
+    margin-bottom: 9vmax;
+    padding-left: 2.5vmax;
+    line-height: 1.5;
+    font-size: 1.9vmax;
+
+    @media (max-width: 767px) {
+        font-size: 2.8vmax;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+        content: " ";
+        position: absolute;
+        top: .5vmax;
+        left: .2vmax;
+        background: white;
+        border-radius: 100%;
+        border: .4vmax solid #879679;
+        width: 0;
+        height: 0;
+    }
+
+    &__date {
+      font-weight:bold;
+      position: relative;
+      display: inline-block;
+      padding: .5vmax 1vmax .5vmax 0;
+      z-index: 3;
+      background: $skyblue;
+      color: #707070;
+      margin-left: -19vmax;
+      width: 13.5vmax;
+      height: 3.33vmax;
+      text-align: right;
+      font-size: 1.6vmax;
+
+      @media (max-width: 767px) {
+        margin-left: 1vmax;
+        margin-bottom: 1vmax;
+        text-align: left;
+        padding: 0 0px 0 1vmax;
+        font-size: 2.3vmax;
+        width: 19vmax;
+        top: -.5vmax;
+      }
+
+      &:before,
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: -1.05vmax;
+        width: 0;
+        height: 0;
+        border-top: 1.7vmax solid transparent;
+        border-left: 1.2vmax solid #D3E7F3;
+        border-bottom: 1.7vmax solid transparent;
+
+        @media (max-width: 767px) {
+          border-right: 1.2vmax solid $skyblue;
+          border-left: 0px none;
+          left: -1.05vmax;
+          right: initial;
+        }
+      }
+    }
+
+    &__title,
+    &__place {
+      padding-left: 10px;
+    }
+
+    &__title {
+      font-weight: bold;
+      margin-top: -3.3vmax;
+
+       @media (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+
+    &__link {
+      color: gray;
+    }
+
+    &__expand {
+      cursor: pointer;
+      border-bottom: 3px solid gray;
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: 5px;
+      font-size: 1.6vmax;
+
+        @media (max-width: 767px) {
+            font-size: 2.4vmax;
+        }
+
+    }
+
+    &__duties {
+      display: none;
+      position: absolute;
+      width: 50vmax;
+      height: 60vh;
+      background: red;
+      border: 1px solid white;
+      border-top-width: 20vh;
+      border-bottom-width: 20vh;
+      border-left-width:25vmax;
+      border-right-width:25vmax;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timelineItem::before {
+  transition: all .5s ease-in-out;
+}
+
+.timelineItem.in-view::before {
+    width: 2vmax;
+    height: 2vmax;
+    left: -.5vmax;
+
+}
+
+.timelineItem div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out .6s;
+}
+
+.timelineItem div.timelineItem__date {
+  transition-delay: .3s;
+}
+
+.timelineItem >  *:not(.timelineItem__date) {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timelineItem .timelineItem__date {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timelineItem.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.aspect-very-tall {
+    .timelineDetails__inner {
+        padding: 6vmax 4vmax;
+
+        @media (max-width: 700px) {
+            font-size: 1.8rem;
+            padding: 3vmax 2vmax;
+            margin-top: 5vmax;
+            max-height: 90vh;
+            overflow-y: scroll;
+        }
+    }
+
+    .timelineDetails__close {
+        height: 5vmax;
+        width: 5vmax;
+        border-radius: 0 0 0 100%;
+        background-position: top right;
+        right: 0;
+        top: 0;
+    }
+}
