@@ -1,3 +1,12 @@
+/**
+ * Element.matches() polyfill (simple version)
+ * https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
+ */
+if (!Element.prototype.matches) {
+    Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+}
+
+
 function getWindowSize() {
   if (typeof (window.innerWidth) == 'number') {
     myWidth = window.innerWidth;
@@ -103,10 +112,17 @@ function closeDetailModal(activeDetailItemNode) {
 }
 
 
+// Listen for clicks on the document
+document.addEventListener('click', function (event) {
+
+    // Log the clicked element in the console
+    console.log("document was clicked");
+    console.log(event.target);
+
+});
+
 
 window.addEventListener('click', function (event) {
-    console.log("window clicked");
-
     if (event.target.matches('.timelineItem__expand')) {
         console.log("expand button clicked");
         var itemIndex = event.target.parentNode.getAttribute("data-timeline-item")
