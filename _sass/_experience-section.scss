@@ -275,45 +275,44 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timelineItem::before {
-  transition: all .5s ease-in-out;
-}
-
-.timelineItem.in-view::before {
-    width: 2vmax;
-    height: 2vmax;
-    left: -.5vmax;
-
-}
-
-.timelineItem::before {
     width: 2vmax;
     height: 2vmax;
     left: -.5vmax;
 }
+// .timelineItem::before {
+//   transition: all .5s ease-in-out;
+// }
 
-.timelineItem div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all .5s ease-in-out .6s;
-}
+// .timelineItem.in-view::before {
+//     width: 2vmax;
+//     height: 2vmax;
+//     left: -.5vmax;
 
-.timelineItem div.timelineItem__date {
-  transition-delay: .3s;
-}
+// }
 
-.timelineItem >  *:not(.timelineItem__date) {
-  transform: translate3d(200px, 0, 0);
-}
+// .timelineItem div {
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: all .5s ease-in-out .6s;
+// }
 
-.timelineItem .timelineItem__date {
-  transform: translate3d(-200px, 0, 0);
-}
+// .timelineItem div.timelineItem__date {
+//   transition-delay: .3s;
+// }
 
-.timelineItem.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
-}
+// .timelineItem >  *:not(.timelineItem__date) {
+//   transform: translate3d(200px, 0, 0);
+// }
+
+// .timelineItem .timelineItem__date {
+//   transform: translate3d(-200px, 0, 0);
+// }
+
+// .timelineItem.in-view div {
+//   transform: none;
+//   visibility: visible;
+//   opacity: 1;
+// }
 
 
 .aspect-very-tall {
