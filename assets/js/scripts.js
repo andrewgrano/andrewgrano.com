@@ -113,6 +113,8 @@ function closeDetailModal(activeDetailItemNode) {
 
 
 window.addEventListener('click', function (event) {
+    console.log(event.target);
+
     if (event.target.matches('.timelineItem__expand')) {
         console.log("expand button clicked");
         var itemIndex = event.target.parentNode.getAttribute("data-timeline-item")
