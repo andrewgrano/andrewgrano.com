@@ -60,6 +60,22 @@
         }
     }
 
+    // for iphone X and other tall, narrow screens
+    @media (max-width: 380px) and (min-height: 670px) {
+        .contactInfo {
+            padding: 8vmax 0vmax;
+        }
+
+        .contactInfo__heading {
+            margin-right: 4vmax;
+        }
+
+        .contactInfo__links li {
+            margin-left: 4vmax;
+            margin-right: 4vmax;
+        }
+    }
+
     // for phones
     @media (max-width: 480px) {
         .contactInfo__links li a {

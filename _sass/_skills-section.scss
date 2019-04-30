@@ -52,11 +52,19 @@
       left: -8vmax;
       transform: rotateZ(180deg);
       top: 4vmax;
+
+      @media (max-width: 767px) {
+        left: -5vmax;
+      }
+
     }
 
     &--design {
-
       right: -8vmax;
+
+      @media (max-width: 767px) {
+        right: -5vmax;
+      }
     }
   }
 }

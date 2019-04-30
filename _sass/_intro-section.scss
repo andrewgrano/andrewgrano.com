@@ -127,7 +127,7 @@
         width: 50.25%;
         background: $green-light;
         transform: skew(0deg, -30deg);
-        box-shadow: .1em -2em 0 0em $white;
+        box-shadow: .1em -2em 0 0em #5A694D;
       }
 
       &:after {
@@ -140,7 +140,7 @@
         width: 50.5%;
         background: $green-light;
         transform: skew(0deg, 30deg);
-        box-shadow: .1em -2.1em 0 0em $white;
+        box-shadow: .1em -2.1em 0 0em #5A694D;
       }
     }
 
