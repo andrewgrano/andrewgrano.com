@@ -113,8 +113,6 @@ function closeDetailModal(activeDetailItemNode) {
 
 
 document.addEventListener('click', function (event) {
-    console.log("document was clicked")
-    console.log(event.target);
 
     if (event.target.matches('.timelineItem__expand')) {
         console.log("expand button clicked");
