@@ -111,12 +111,6 @@ function closeDetailModal(activeDetailItemNode) {
     parent.classList.remove("show")
 }
 
-window.addEventListener('click', function (event) {
-    console.log("window clicked");
-    console.log(event.target);
-
-});
-
 
 document.addEventListener('click', function (event) {
     console.log("document was clicked")
