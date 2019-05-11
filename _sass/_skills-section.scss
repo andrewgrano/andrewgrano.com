@@ -45,13 +45,15 @@
     padding-top: 17vmax;
     position: absolute;
     top: 0;
-    text-orientation: sideways-right;
-    writing-mode: vertical-lr;
+
 
     &--development {
       left: -8vmax;
-      transform: rotateZ(180deg);
+      transform: rotate(180deg);
+      text-orientation: sideways-right;
+      writing-mode: vertical-lr;
       top: 4vmax;
+
 
       @media (max-width: 767px) {
         left: -5vmax;
@@ -61,6 +63,8 @@
 
     &--design {
       right: -8vmax;
+      text-orientation: sideways-right;
+      writing-mode: vertical-lr;
 
       @media (max-width: 767px) {
         right: -5vmax;
@@ -336,3 +340,44 @@ body:not(.aspect-very-tall) {
   }
 
 }
+
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.circle--1 {
+  position: relative;
+  left: -30vmax;
+  opacity: 0;
+  transition: all 1s ease-in-out 0s;
+}
+
+.circle--2 {
+  position: relative;
+  right: -30vmax;
+  opacity: 0;
+  transition: all 1s ease-in-out 0s;
+}
+
+.circle .skill {
+  opacity: 0;
+  transition: opacity 1s ease-in-out .8s;
+}
+
+.circle--1.in-view {
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.circle--2.in-view {
+  position: relative;
+  right: 0;
+  opacity: 1;
+}
+
+.circle.in-view .skill {
+  opacity: 1;
+}
+
