@@ -238,31 +238,46 @@ body:not(.aspect-very-tall) {
 
 
   .circle--1 .skill:nth-child(1) {
-    // top: 2vmax;
-    right: -3vmax;
+    right: -8vmax;
+    top: 7.5vmax;
   }
 
   .circle--1 .skill:nth-child(2) {
-    top: 5vmax;
+    top: -4vmax;
+    left: 6vmax;
+
+    br {
+      display: none;
+    }
   }
 
   .circle--1 .skill:nth-child(3) {
-    // top: 2vmax;
-    left: -3vmax;
+    left: -19vmax;
+    top: 1vmax;
   }
 
   .circle--1 .skill:nth-child(4) {
-    right: 4vmax;
-    top: 3vmax;
+    right: 8vmax;
+    top: 2vmax;
+
+    br {
+      display: none;
+    }
   }
 
   .circle--1 .skill:nth-child(5) {
-    left: 4vmax;
-    top: 3vmax;
+    left: 11vmax;
+    top: 1vmax;
   }
 
   .circle--1 .skill:nth-child(6) {
-    top: 2vmax;
+    top: 1vmax;
+    margin-left: -10vmax;
+    left: 5vmax;
+    
+    br {
+      display: none;
+    }
   }
 
   .circle--middle .skill:nth-child(1) {
