@@ -1,0 +1,189 @@
+.projects {
+    background: $green-dull;
+    color: white;
+    font-size: 2vmax;
+    padding: 7vmax 5vmax 10vmax;
+    line-height: 1.5;
+    position: relative;
+
+    &__heading {
+        font-size: 5.5vmax;
+        font-family: $displayFont;
+        text-align: right;
+        line-height: 1;
+        margin-bottom: -3vmax;
+    }
+
+    &__desc {
+        font-size: 2vmax;
+        padding-right: 40vmax;
+        margin-bottom: 6vmax;
+    }
+
+    &Item {
+        display: block;
+        color: $white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 15vmax;
+        margin-right: 15vmax;
+        margin-bottom: 6vmax;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__link {
+            border-bottom: 1vmax solid $orange-dull;
+            font-family: $displayFont;
+            margin-bottom: 1vmax;
+            color: $white;
+            text-decoration: none;
+            display: block;
+            text-align: right;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: $gray-dark;
+                border-bottom-color: $orange-bright;
+            }
+        }
+
+        &__desc {
+            font-size: 1.7vmax;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    &__professionalWrapper {
+        margin-bottom: 10vmax;
+    }
+
+    &__personalWrapper {
+
+        .projects__heading {
+            text-align: left;
+        }
+
+        .projects__desc {
+            text-align: right;
+            padding-right: 0;
+            padding-left: 40vmax;
+        }
+
+        .projectsItem__link {
+            text-align: left;
+        }
+
+    }
+}
+
+.aspect-tall {
+    .projects {
+        font-size: 2.4vmax;
+
+        &__desc {
+            font-size: 2.2vmax;
+        }
+
+        &Item__desc {
+            font-size: 1.8vmax;
+        }
+    }
+}
+
+.aspect-very-tall {
+    .projects {
+
+        &__heading {
+            margin-bottom: 0;
+        }
+        &__desc {
+            font-size: 2vmax;
+            padding-right: 27vmax;
+            margin-bottom: 6vmax;
+        }
+
+        &Item {
+            margin-left: 5vmax;
+            margin-right: 5vmax;
+        }
+
+        &Link {
+            margin-left: 10vmax;
+
+            &__website {
+                margin-right: 10vmax;
+            }
+        }
+
+        &__personalWrapper {
+            .projects__desc {
+                padding-right: 0;
+                padding-left: 27vmax;
+            }
+
+            .projectsItem__link {
+                text-align: left;
+            }
+
+        }
+
+    }
+
+    // for phones
+    @media (max-width: 480px) {
+        .projects {
+            font-size: 2.8vmax;
+            padding-left: 3.5vmax;
+            padding-right: 3.5vmax;
+        }
+
+        .projects__heading {
+            margin-bottom: 2vmax;
+        }
+
+        .projects__desc {
+            padding-right: 9vmax;
+            margin-bottom: 4vmax;
+            font-size: 2.6vmax;
+        }
+
+        .projects__personalWrapper .projects__desc {
+            padding-left: 9vmax;
+        }
+
+        .projectsItem {
+            margin-left: 3vmax;
+            margin-right: 3vmax;
+
+            &__desc {
+                font-size: 2.4vmax;
+            }
+        }
+    }
+
+  // for iphone X and other tall, narrow screens
+  @media (max-width: 380px) and (min-height: 670px) {
+    .projects {
+        padding: 8vmax 3vmax 8vmax;
+
+        &__desc {
+            padding-right: 3vmax;
+        }
+
+        &Link {
+            margin-left: 3vmax;
+
+            &__website {
+                margin-right: 1vmax;
+            }
+        }
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+@import 'minireset';
+@import 'variables';
+@import 'globals';
+
+@import 'intro-section';
+@import 'bio-section';
+@import 'skills-section';
+@import 'experience-section';
+@import 'projects-section';
+@import 'contact-section';
+
+.intro {
+    background-color: blue !important;
+}

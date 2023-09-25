@@ -1,0 +1,120 @@
+.bioSection {
+    background: $green-dull;
+    color: white;
+    font-size: 2.5vw;
+    padding: 5vh 5vw 1vh;
+    font-family: $displayFont;
+    line-height: 1.5;
+    position: relative;
+
+    &Wrapper {
+        overflow: hidden;
+        padding-bottom: 26vh;
+        background: $biege;
+    }
+
+    &:after {
+      content: " ";
+      width: 210%;
+      height: 36vh;
+      position: absolute;
+      bottom: -20vh;
+      right: -100%;
+      transform: rotate(4deg);
+      background: $green-dull;
+    }
+
+    p,
+    img {
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        margin-bottom: 5vw;
+
+        &:nth-child(2) {
+          border-right: 2.5vw solid $green-light;
+          padding: 3vw 3vw 3vw 0;
+          margin-left: 4vw;
+          margin-bottom: 2vw;
+        }
+
+        &:not(:nth-child(2)) {
+          margin-right: 4vw;
+        }
+
+        &:last-child {
+          padding-left: 4vw;
+          margin-bottom: 0;
+        }
+    }
+
+    &__image-tall {
+        float: left;
+        padding: 0 3vw 0 2vw;
+        border-left: 2.5vw solid $green-light;
+        width: 40vw;
+        max-width: 700px;
+    }
+
+    &__image-wide {
+      display: none;
+    }
+}
+
+.aspect-tall {
+  .bioSection {
+    font-size: 2.8vw;
+  }
+}
+
+.aspect-very-tall {
+  .bioSection {
+    font-size: 2.8vh;
+    padding: 1vh 5vw 1vh;
+
+    &:after {
+      bottom: -10vh;
+    }
+
+    &Wrapper {
+      padding-bottom: 18vh;
+    }
+
+    p {
+      &:last-child {
+        padding-left: 0;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(5) {
+        border-left: 3vh solid $green-light;
+        padding-left: 3vh;
+        border-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 3vh;
+      }
+
+
+      // &:nth-child(5) {
+      //   border-right: 3vh solid $green-light;
+      //   padding-right: 3vh;
+      // }
+
+    }
+
+    &__image-tall {
+      display: none;
+    }
+
+    &__image-wide {
+      display: inline-block;
+      margin-bottom: 5vh;
+    }
+
+
+  }
+}
