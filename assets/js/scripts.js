@@ -84,8 +84,8 @@ function nextDetailModal (activeDetailItemNode) {
     // console.log(parentIndex + 1)
 
 
-    if( parentIndex === 5 ) {
-      var nextDetailItem =  document.querySelector("[data-details-item='1']");
+    if( parentIndex === 7 ) {
+      var nextDetailItem =  document.querySelector("[data-details-item='0']");
     } else {
       var nextDetailItem =  document.querySelector("[data-details-item='" + (parentIndex + 1) + "']");
     }
@@ -97,8 +97,8 @@ function prevDetailModal (activeDetailItemNode) {
     var parent = activeDetailItemNode
     var parentIndex = parent.getAttribute("data-details-item")
     parent.classList.remove("show");
-    if( parentIndex == 1 ) {
-      var prevDetailItem =  document.querySelector("[data-details-item='5']");
+    if( parentIndex == 0 ) {
+      var prevDetailItem =  document.querySelector("[data-details-item='7']");
     } else {
       var prevDetailItem =  document.querySelector("[data-details-item='" + (parentIndex - 1) + "']");
     }
