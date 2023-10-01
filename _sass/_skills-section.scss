@@ -193,8 +193,8 @@ body:not(.aspect-very-tall) {
   }
 
   .circle {
-    width: 50vmax;
-    height: 50vmax;
+    width: 45vmax;
+    height: 45vmax;
   }
 
   .circle-inner {
@@ -207,10 +207,11 @@ body:not(.aspect-very-tall) {
     margin-right: 0;
     padding-right: 0;
     top: 0;
-    margin-bottom: -15vmax;
+    margin-bottom: -18vmax;
     padding-bottom: 23vmax;
     padding-right: 8vmax;
     padding-left: 8vmax;
+    padding-top: 5vmax;
   }
 
   .circle--middle {
@@ -219,32 +220,37 @@ body:not(.aspect-very-tall) {
     margin: 0;
     width: 50vmax;
     height: auto;
-    padding: 0 5vmax;
+    padding: 1vmax 9vmax 0;
+
+    .circle-inner {
+      display: flex;
+    }
   }
 
   .circle--2 {
     margin-left: 0;
     padding-left: 0;
     margin-top: -15vmax;
-    padding-top: 22vmax;
+    padding-top: 18vmax;
     padding-right: 8vmax;
     padding-left: 8vmax;
-    padding-bottom: 3vmax;
+    padding-bottom: 2vmax;
   }
 
   .skill {
-    font-size: 2.6vmax;
+    font-size: 2.3vmax;
+    padding: 5px 0px;
   }
 
 
   .circle--1 .skill:nth-child(1) {
-    right: -8vmax;
-    top: 7.5vmax;
+    // right: -8vmax;
+    // top: 7.7vmax;
   }
 
   .circle--1 .skill:nth-child(2) {
-    top: -4vmax;
-    left: 6vmax;
+    // top: -4vmax;
+    // left: 6vmax;
 
     br {
       display: none;
@@ -252,13 +258,13 @@ body:not(.aspect-very-tall) {
   }
 
   .circle--1 .skill:nth-child(3) {
-    left: -19vmax;
-    top: 1vmax;
+    // left: -19vmax;
+    // top: 1.7vmax;
   }
 
   .circle--1 .skill:nth-child(4) {
-    right: 8vmax;
-    top: 2vmax;
+    // right: 3vmax;
+    // top: 2vmax;
 
     br {
       display: none;
@@ -266,14 +272,14 @@ body:not(.aspect-very-tall) {
   }
 
   .circle--1 .skill:nth-child(5) {
-    left: 11vmax;
-    top: 1vmax;
+    // left: 2vmax;
+    // top: 2vmax;
   }
 
   .circle--1 .skill:nth-child(6) {
-    top: 1vmax;
-    margin-left: -10vmax;
-    left: 5vmax;
+    // top: 2.5vmax;
+    // margin-left: -10vmax;
+    // left: 5vmax;
     
     br {
       display: none;
@@ -281,43 +287,51 @@ body:not(.aspect-very-tall) {
   }
 
   .circle--middle .skill:nth-child(1) {
-    top: -3.5vmax;
-    left: 3vmax;
+    // top: -5.5vmax;
+    // left: 10vmax;
+    order: 4;
   }
 
   .circle--middle .skill:nth-child(2) {
-    top: -1vmax;
+    order: 3;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    // top: -1vmax;
+    // left: -1vmax
   }
 
   .circle--middle .skill:nth-child(3) {
-    left: 2vmax;
+    order: 1;
+    // left: 8vmax;
   }
 
   .circle--middle .skill:nth-child(4) {
-    top: 5vmax;
-    right: 10vmax;
+    order: 2;
+    // top: -4.7vmax;
+    // left: -20vmax;
   }
 
   .circle--2 .skill:nth-child(1) {
-    right: 2vmax;
-    top: 5vmax;
+    // right: 2vmax;
+    // top: 5vmax;
   }
 
   .circle--2 .skill:nth-child(2) {
-    left: 2vmax;
-    top: 5vmax;
+    // left: 2vmax;
+    // top: 5vmax;
   }
 
   .circle--2 .skill:nth-child(3) {
-    top: -5vmax;
+    // top: -5vmax;
   }
 
   .circle--2 .skill:nth-child(4) {
-    top: 1.5vmax;
+    // top: 1.5vmax;
+    padding: 0 8vmax;
   }
 
   .circle--2 .skill:nth-child(5) {
-    top: 2.5vmax;
+    // top: 2.5vmax;
   }
 
   // for iphone X and other tall, narrow screens
@@ -325,6 +339,10 @@ body:not(.aspect-very-tall) {
 
     .skills {
       padding-bottom: 8vmax;
+    }
+
+    .skill {
+      font-size: 2vmax;
     }
 
     .circleTitle {
@@ -342,13 +360,13 @@ body:not(.aspect-very-tall) {
 
     .circle--middle {
       .skill:nth-child(1) {
-          top: -1vmax;
-          left: 1vmax;
+          // top: -1vmax;
+          // left: 1vmax;
       }
 
       .skill:nth-child(4) {
-        top: 1vmax;
-        right: 0vmax;
+        // top: 1vmax;
+        // right: 0vmax;
       }
 
     }
